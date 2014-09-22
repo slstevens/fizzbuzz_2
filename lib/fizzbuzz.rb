@@ -1,13 +1,17 @@
 class FizzBuzz
 	def is_divisible_by_3?(number)
-		number % 3 == 0
+		is_divisible_by?(number,3)
 	end
 
 	def is_divisible_by_5?(number)
-		number % 5 == 0
+		is_divisible_by?(number,5)
 	end
 
 	def is_divisible_by_15?(number)
-		number % 15 == 0 
+		is_divisible_by?(number,15)
+	end
+
+	def is_divisible_by?(number,divisor)
+		number % divisor == 0
 	end
 end
