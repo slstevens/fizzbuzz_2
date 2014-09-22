@@ -19,5 +19,9 @@ class FizzBuzz
 		return "FizzBuzz" if is_divisible_by_15?(number)
 		return "Fizz" if is_divisible_by_3?(number)
 		return "Buzz" if is_divisible_by_5?(number)
+		number
 	end
 end
+
+fizzbuzz = FizzBuzz.new
+(1..50).to_a.each {|n| `say #{fizzbuzz.fizzbuzz(n)}`}
