@@ -41,6 +41,14 @@ describe FizzBuzz do
 			expect(fizzbuzz.fizzbuzz(3)).to eq "Fizz"
 		end
 
+		it "should return buzz if a multiple of 5" do
+			expect(fizzbuzz.fizzbuzz(5)).to eq "Buzz"
+		end
+
+		it "should return fizzbuzz if a multiple of 3 and 5" do
+			expect(fizzbuzz.fizzbuzz(15)).to eq "FizzBuzz"
+		end
+
 	end
 
 end
