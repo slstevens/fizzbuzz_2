@@ -34,4 +34,13 @@ describe FizzBuzz do
 			expect(fizzbuzz.is_divisible_by_15?(1 )).to eq false
 		end
 	end
+
+	context 'playing fizzbuzz' do
+
+		it "should return fizz if a multiple of 3" do
+			expect(fizzbuzz.fizzbuzz(3)).to eq "Fizz"
+		end
+
+	end
+
 end
